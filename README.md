@@ -8,8 +8,8 @@ openssl 1.0.1.  python3.7 [dropped][python3.7-pr] support for end-of-lifed
 openssl versions.
 
 travis-ci has a `xenial` distribution which can be enabled with `dist: xenial`
-+ `sudo: required`.  The `python: 3.7-dev` virtualenv provided by travis-ci for
-xenial is still 3.7a4 which is quite a bit different from 3.7.0 final.
+and `sudo: required`.  The `python: 3.7-dev` virtualenv provided by travis-ci
+for xenial is still 3.7a4 which is quite a bit different from 3.7.0 final.
 
 deadsnakes provides a backport of python3.7 for ubuntu xenial which can be
 enabled using the [travis-ci apt addon][travis-ci-apt-addon].  Unfortunately,
