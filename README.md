@@ -38,6 +38,19 @@ only install `python3.7` once as both `sudo: required` and the `apt` add on
 add a significant amount of time to the build.  The example `.travis.yml` does
 this.
 
+### update (2018-07-03)
+
+travis-ci has enabled `python: 3.7` on `dist: xenial` so deadsnakes is no
+longer necessary:
+
+```yaml
+    - env: TOXENV=py37
+      python: 3.7
+      sudo: required
+      dist: xenial
+```
+
+
 [python3.7-pr]: https://github.com/python/cpython/pull/3462
 [travis-ci-apt-addon]: https://docs.travis-ci.com/user/installing-dependencies#Installing-Packages-with-the-APT-Addon
 [travis-ci-issue]: https://github.com/travis-ci/travis-ci/issues/9827
