@@ -16,7 +16,7 @@ matrix:
         apt:
           sources:
           # https://github.com/travis-ci/travis-ci/issues/9827
-          - sourceline: 'deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu xenial main'
+          - sourceline: 'ppa:deadsnakes/ppa'
           packages:
           - python3.7-dev
 install: pip install tox
