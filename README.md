@@ -28,7 +28,7 @@ dist: xenial
 addons:
   apt:
     sources:
-    - sourceline: 'deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu xenial main'
+    - sourceline: 'ppa:deadsnakes/ppa'
     packages:
     - python3.7-dev
 ```
