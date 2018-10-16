@@ -6,17 +6,13 @@ matrix:
       python: 3.6
     - env: TOXENV=py37
       python: 3.7
-      sudo: required
       dist: xenial
     - env: TOXENV=py37
-      # *both* sudo: required + dist: xenial are required to get xenial
-      sudo: required
       dist: xenial
       addons:
         apt:
           sources:
-          # https://github.com/travis-ci/travis-ci/issues/9827
-          - sourceline: 'ppa:deadsnakes/ppa'
+          - deadsnakes
           packages:
           - python3.7-dev
 install: pip install tox
